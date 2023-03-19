@@ -1,0 +1,81 @@
+img {
+  width: 250px;
+}
+h1 {
+  font-family: "Kodchasan";
+  font-style: normal;
+  /* text-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px; */
+
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "Kodchasan";
+  font-style: normal;
+  /* text-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px; */
+  color: white;
+}
+
+.primul {
+  color: white;
+}
+
+.ultimul {
+  color: white;
+}
+
+.p1 {
+  font-family: "Kodchasan";
+  font-style: normal;
+  color: #ffffff;
+}
+
+.p2 {
+  font-family: "Kodchasan";
+  font-style: normal;
+  color: #4d47c3;
+  cursor: pointer;
+}
+
+.loginBox {
+  box-sizing: border-box;
+}
+.Email {
+  height: 30px;
+}
+h3 {
+  color: white;
+  text-align: center;
+  font-family: "Kodchasan";
+}
+
+input {
+  height: 30px;
+  border-radius: 20px;
+  width: 100%;
+}
+.loginBox a {
+  text-align: end;
+  color: mediumorchid;
+}
+.loginBox button {
+  border: 1px solid blue;
+
+  width: 100%;
+  height: 50px;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 40px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-size: 30px;
+  font-family: "Kodchasan";
+  justify-content: center;
+
+  text-decoration: none;
+  user-select: none;
+
+  cursor: pointer;
+}

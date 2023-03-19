@@ -1,0 +1,37 @@
+a {
+  font-size: 30px;
+}
+
+img {
+  cursor: pointer;
+}
+.Back img {
+  width: 50px;
+  cursor: pointer;
+}
+.ImgForm1 img {
+  width: 150px;
+  cursor: pointer;
+}
+.ImgForm1 h1 {
+  font-family: "Kodchasan";
+  font-style: normal;
+  font-weight: 10;
+  text-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+
+  color: #ffffff;
+  cursor: pointer;
+}
+.Form2 h1 {
+  font-family: "Kodchasan";
+  font-style: normal;
+  font-weight: 10;
+  text-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+
+  color: #ffffff;
+  cursor: pointer;
+}
+.Form2 img {
+  width: 200px;
+  cursor: pointer;
+}
