@@ -9,17 +9,15 @@ export class AddForm {
 }
 
 export class Field {
-    name: string;
     label: string;
     placeholder: string;
-    isMendatory: boolean;
-    fieldType: string[];
+    isMandatory: boolean;
+    fieldType: string;
 
-    constructor(name: string, label: string, placeholder: string, isMendatory: boolean, fieldType: string[]) {
-        this.name = name;
+    constructor(label: string, placeholder: string, isMandatory: boolean, fieldType: string) {
         this.label = label;
         this.placeholder = placeholder;
-        this.isMendatory = isMendatory;
+        this.isMandatory = isMandatory;
         this.fieldType = fieldType;
     }
 }

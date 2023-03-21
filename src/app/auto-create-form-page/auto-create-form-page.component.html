@@ -1,1 +1,79 @@
-<p>auto-create-form-page works!</p>
+<div class="container">
+  <h1>Create a Form</h1>
+  <form [formGroup]="formGroup">
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input
+        id="title"
+        type="text"
+        formControlName="title"
+        class="form-control"
+        placeholder="Enter a title for your form"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="fields">Fields:</label>
+      <div  formArrayName="fields" class="field-list">
+        <div *ngFor="let field of fields; let i = index" [formGroupName]="i" class="field-item">
+          <div class="field-header">
+            <span class="field-name">{{ field.name }}</span>
+            <!-- <button
+              type="button"
+              class="btn btn-danger"
+              (click)="removeField(i)"
+            >
+              Remove
+            </button> -->
+          </div>
+
+          <div class="form-group">
+            <label for="label">Label:</label>
+            <input
+              id="label"
+              type="text"
+              formControlName="label"
+              class="form-control"
+              placeholder="Enter a label for this field"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="placeholder">Placeholder:</label>
+            <input
+              id="placeholder"
+              type="text"
+              formControlName="placeholder"
+              class="form-control"
+              placeholder="Enter a placeholder for this field"
+            />
+          </div>
+          <div class="form-group">
+            <label for="isMandatory">Is Mandatory:</label>
+            <input
+              id="isMandatory"
+              type="checkbox"
+              formControlName="isMandatory"
+              class="form-check-input"
+            />
+          </div>
+          <div class="form-group">
+            <label for="fieldType">Field Type:</label>
+            <select
+              id="fieldType"
+              formControlName="fieldType"
+              class="form-control"
+            >
+              <option value="text">text</option>
+              <option value="singleChoice">singlechoice</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary" (click)="addField()">
+        Add Field
+      </button>
+    </div>
+    <button (click)="setValue()" type="submit" class="btn btn-primary">Create Form</button>
+  </form>
+</div>

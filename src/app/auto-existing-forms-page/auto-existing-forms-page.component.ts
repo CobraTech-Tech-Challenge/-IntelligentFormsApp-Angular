@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AddForm } from '../models/add-form';
 
 @Component({
   selector: 'app-auto-existing-forms-page',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./auto-existing-forms-page.component.css']
 })
 export class AutoExistingFormsPageComponent implements OnInit {
+
+  forms: AddForm = new AddForm();
 
   constructor() { }
 

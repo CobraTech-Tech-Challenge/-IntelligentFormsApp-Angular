@@ -1,3 +1,6 @@
+// import { routes } from './../../node_modules/@angular/router/router.d';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -15,6 +18,9 @@ import { PassportExistingFormsPageComponent } from './passport-existing-forms-pa
 import { PassportFormPageComponent } from './passport-form-page/passport-form-page.component';
 import { PassportMenuPageComponent } from './passport-menu-page/passport-menu-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormCardComponent } from './form-card/form-card.component';
+
 
 @NgModule({
   declarations: [
@@ -30,11 +36,17 @@ import { RegisterPageComponent } from './register-page/register-page.component';
     PassportExistingFormsPageComponent,
     PassportFormPageComponent,
     PassportMenuPageComponent,
-    RegisterPageComponent
+    RegisterPageComponent,
+    FormCardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule,
+    // NgModule
   ],
   providers: [],
   bootstrap: [AppComponent]

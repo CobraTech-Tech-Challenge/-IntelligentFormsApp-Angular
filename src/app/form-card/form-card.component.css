@@ -1,0 +1,33 @@
+.forms-container {
+  position: absolute;
+  top: 147px;
+  /* background-color: lightgray; */
+  width: 1111px;
+  height: 1080px;
+}
+
+.form-card {
+  position: relative;
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 8px 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 350px;
+  height: 170px;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  margin: 10px;
+  border-radius: 3% / 6%;
+  cursor: pointer;
+}
+
+.form-title {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  margin: 10px;
+  margin-top: 14px;
+}

@@ -9,6 +9,12 @@ export class FormService {
 
   constructor(private httpClient: HttpClient) { }
 
+
+  public getAllForms() {
+    console.log("test call forms");
+    return this.httpClient.get<AddForm[]>('http://localhost:8080/getAllForms');
+  }
+
   public createForm(form: any) {
     return this.httpClient.post<AddForm>("http://localhost:8080/create-form", form);
   }
