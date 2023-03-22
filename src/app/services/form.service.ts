@@ -12,10 +12,10 @@ export class FormService {
 
   public getAllForms() {
     console.log("test call forms");
-    return this.httpClient.get<AddForm[]>('http://localhost:8080/getAllForms');
+    return this.httpClient.get<AddForm[]>('http://localhost:8080/api/forms/getAllForms');
   }
 
   public createForm(form: any) {
-    return this.httpClient.post<AddForm>("http://localhost:8080/create-form", form);
+    return this.httpClient.post<AddForm>("http://localhost:8080/api/forms/create-form", form);
   }
 }
